@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    
+    <FontFamily x:Key="ApplicationNameFontFamily">Segoe UI</FontFamily>
+    <FontFamily x:Key="HeaderFontFamily">Segoe UI</FontFamily>
+    <FontFamily x:Key="NavigationFontFamily">Segoe UI</FontFamily>
+    <FontFamily x:Key="ContentFontFamily">Segoe UI</FontFamily>
+    <FontFamily x:Key="ControlTitleBigFontFamily">Segoe UI</FontFamily>
+    
+    <sys:Double x:Key="ApplicationNameFontSize">10</sys:Double>
+    <sys:Double x:Key="HeaderFontSize">21.333</sys:Double>
+    <sys:Double x:Key="NavigationFontSize">21.333</sys:Double>
+    <sys:Double x:Key="ContentFontSize">14</sys:Double>
+    <sys:Double x:Key="HyperlinkFontSize">14</sys:Double>
+    <sys:Double x:Key="LabelFontSize">12</sys:Double>
+    <sys:Double x:Key="ControlTitleFontSize">14</sys:Double>
+    <sys:Double x:Key="ControlTitleBigFontSize">16</sys:Double>
+    <sys:Double x:Key="ControlContentFontSize">12</sys:Double>
+    <sys:Double x:Key="ShortcutFontSize">10</sys:Double>
+
+</ResourceDictionary>

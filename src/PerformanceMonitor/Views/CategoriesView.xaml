@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="PerformanceMonitor.Views.CategoriesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:PerformanceMonitor.ViewModels"
+             xmlns:views="clr-namespace:PerformanceMonitor.Views"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance viewModels:CategoriesViewModel}">
+    <DockPanel Background="White">
+        <Button DockPanel.Dock="Top"
+                Command="{Binding CloseCommand}"
+                HorizontalAlignment="Right">
+            <Path Fill="Black"
+                  Width="16"
+                  Height="16"
+                  Stretch="Uniform"
+                  Data="{StaticResource CloseIconGeometry}" />
+        </Button>
+        <UniformGrid DockPanel.Dock="Bottom"
+                     Rows="1">
+            <Button Content="Add"
+                    Command="{Binding AddCommand}" />
+        </UniformGrid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <views:SearchBox Visibility="Collapsed" />
+            <ListBox Grid.Row="1"
+                     Grid.Column="0"
+                     ItemsSource="{Binding Categories}"
+                     SelectedItem="{Binding SelectedCategory}" />
+            <views:SearchBox Grid.Row="0"
+                             Grid.Column="1"
+                             Visibility="Collapsed" />
+            <ListBox Grid.Row="1"
+                     Grid.Column="1"
+                     Name="Instances"
+                     ItemsSource="{Binding SelectedCategory.Instances}"
+                     SelectionMode="Extended" />
+            <views:SearchBox Grid.Row="0"
+                             Grid.Column="2"
+                             Visibility="Collapsed" />
+            <ListBox Grid.Row="1"
+                     Grid.Column="2"
+                     Name="Counters"
+                     ItemsSource="{Binding SelectedCategory.Counters}"
+                     SelectionMode="Extended" />
+        </Grid>
+    </DockPanel>
+</UserControl>

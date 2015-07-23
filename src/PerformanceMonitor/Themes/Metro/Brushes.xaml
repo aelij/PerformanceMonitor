@@ -1,0 +1,165 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:options="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+    <!-- Global Settings-->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+    
+    <!-- *************BRUSHES START************* -->
+    <!--PROJECT TEMPLATE BRUSHES -->
+
+    <!-- ACCENT COLOR BRUSHES -->
+    <SolidColorBrush x:Key="AccentColorMagentaBrush" Color="{StaticResource AccentColorMagenta}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorPurpleBrush" Color="{StaticResource AccentColorPurple}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorTealBrush" Color="{StaticResource AccentColorTeal}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorLimeBrush" Color="{StaticResource AccentColorLime}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorBrownBrush" Color="{StaticResource AccentColorBrown}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorPinkBrush" Color="{StaticResource AccentColorPink}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorOrangeBrush" Color="{StaticResource AccentColorOrange}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorBlueBrush" Color="{StaticResource AccentColorBlue}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorLightBlueBrush" Color="{StaticResource AccentColorLightBlue}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorRedBrush" Color="{StaticResource AccentColorRed}" options:Freeze="True" />
+    <SolidColorBrush x:Key="AccentColorGreenBrush" Color="{StaticResource AccentColorGreen}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="HoverForegroundBrush"
+                     Color="{StaticResource HoverForegroundColor}" />
+    
+    <!-- UNIVERSAL CONTROL BRUSHES -->
+    <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="WhiteBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="BlackBrush" Color="{StaticResource BlackColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TextBrush" Color="{StaticResource BlackColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="LabelTextBrush" Color="{StaticResource BlackColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="WhiteColorBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="BlackColorBrush" Color="{StaticResource BlackColor}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="HighlightBrush" Color="{StaticResource AccentColorBlue}" options:Freeze="True" />
+    <SolidColorBrush x:Key="HighlightLightBrush" Color="{StaticResource AccentColorLightBlue}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ControlsDisabledBrush" Color="{StaticResource TransparentLightLightColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ReadOnlyBrush" Color="{StaticResource TransparentLightestColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="DisabledForegroundBrush" Color="#FFAAAAAA" options:Freeze="True" />
+    <SolidColorBrush x:Key="DisabledControlBrush" Color="#FFAAAAAA" options:Freeze="True" />
+    <SolidColorBrush x:Key="DisabledWhiteColorBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="TransparentWhiteBrush" Color="{StaticResource TransparentWhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TransparentWhiteLightBrush" Color="{StaticResource TransparentWhiteColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TransparentLightestBrush" Color="{StaticResource TransparentLightestColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TransparentLightLightBrush" Color="{StaticResource TransparentLightLightColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TransparentBlackBrush" Color="{StaticResource TransparentBlackColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TransparentDarkBrush" Color="{StaticResource TransparentDarkColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TransparentDarkDarkDarkBrush" Color="{StaticResource TransparentDarkDarkDarkColor}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="GrayBrush1" Color="{StaticResource Gray1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush2" Color="{StaticResource Gray2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush3" Color="{StaticResource Gray3}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush4" Color="{StaticResource Gray4}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush5" Color="{StaticResource Gray5}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush6" Color="{StaticResource Gray6}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush7" Color="{StaticResource Gray7}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush8" Color="{StaticResource Gray8}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush9" Color="{StaticResource Gray9}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush10" Color="{StaticResource Gray10}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush11" Color="{StaticResource Gray11}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush12" Color="{StaticResource Gray12}" options:Freeze="True" />
+    <SolidColorBrush x:Key="GrayBrush13" Color="{StaticResource Gray13}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="TextBoxBorderBrush" Color="{StaticResource Gray1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ControlBorderBrush" Color="{StaticResource Gray1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TextBoxMouseOverBorderBrush" Color="{StaticResource AccentColorBlue}" options:Freeze="True" />
+    <SolidColorBrush x:Key="TextBoxMouseOverInnerBorderBrush" Color="{StaticResource AccentColorLightBlue}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="CheckBoxBrush" Color="{StaticResource Gray2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="CheckBoxMouseOverBrush" Color="{StaticResource Gray3}" options:Freeze="True" />
+    <LinearGradientBrush x:Key="CheckBoxBackgroundBrush" EndPoint="0.5,1" StartPoint="0.5,0" options:Freeze="True" >
+        <GradientStop Color="#FFE5E5E5" Offset="0"/>
+        <GradientStop Color="{StaticResource WhiteColor}" Offset="1"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="ApplicationNameBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="ThumbBrush" Color="{StaticResource Gray4}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="ItemSelectedBrush" Color="{StaticResource Gray5}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="SliderTrackBrush" Color="{StaticResource Gray6}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="NormalBrush" Color="{StaticResource Gray7}" options:Freeze="True" />
+
+    <SolidColorBrush x:Key="ComboBoxPopupBrush" Color="{StaticResource Gray9}" options:Freeze="True" />
+    
+    <DropShadowEffect x:Key="DropShadowBrush" 
+                      BlurRadius="10" 
+                      RenderingBias="Performance" 
+                      ShadowDepth="0" 
+                      Opacity="1" 
+                      Direction="2" 
+                      options:Freeze="True" />
+    
+    <LinearGradientBrush x:Key="SeperatorBrush" StartPoint="0.5,0" EndPoint="0.5,1" options:Freeze="True">
+        <GradientStop Color="White" Offset="0" />
+        <GradientStop Color="WhiteSmoke" Offset="0.25" />
+    </LinearGradientBrush>
+    
+    <SolidColorBrush x:Key="GripperShadowBrush"
+                     Color="#313239" Opacity="0.7" 
+                     options:Freeze="True" />
+    
+    <SolidColorBrush x:Key="GripperHighlightBrush"
+                     Color="#cfd0d2" Opacity="0.8"
+                     options:Freeze="True" />   
+    
+    <SolidColorBrush x:Key="ControlBarBackgroundBrush"
+                     Color="#313239" Opacity="0.7" 
+                     options:Freeze="True" />
+    
+    <SolidColorBrush x:Key="ControlBarBorderBrush"
+                     Color="#cfd0d2" Opacity="0.23"
+                     options:Freeze="True" />   
+    
+    <!-- CONTROL VALIDATION BRUSHES -->
+    <SolidColorBrush x:Key="ControlsValidationBrush" Color="{StaticResource ControlsValidationColor}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationBrush1" Color="{StaticResource ValidationColor1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationBrush2" Color="{StaticResource ValidationColor2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationBrush3" Color="{StaticResource ValidationColor3}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationBrush4" Color="{StaticResource ValidationColor4}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationBrush5" Color="{StaticResource ValidationColor5}" options:Freeze="True" />
+    <LinearGradientBrush x:Key="ValidationBrush6" 
+                         StartPoint="0.5,0" EndPoint="0.5,1" MappingMode="RelativeToBoundingBox"
+                         options:Freeze="True">
+        <GradientStop Color="#DAB6B6" Offset="0.0" />
+        <GradientStop Color="#E4BFBF" Offset="0.5" />
+        <GradientStop Color="#FDD3D3" Offset="1" />
+    </LinearGradientBrush>    
+    <SolidColorBrush x:Key="ValidationSummaryBrush1" Color="{StaticResource ValidationSummaryColor1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryBrush2" Color="{StaticResource ValidationSummaryColor2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryBrush3" Color="{StaticResource ValidationSummaryColor3}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryBrush4" Color="{StaticResource ValidationSummaryColor4}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryBrush5" Color="{StaticResource ValidationSummaryColor5}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryFillBrush1" Color="{StaticResource ValidationSummaryFillColor1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryFillBrush2" Color="{StaticResource ValidationSummaryFillColor2}" options:Freeze="True" />
+    <SolidColorBrush x:Key="ValidationSummaryDisabledBrush" Color="{StaticResource TransparentLightLightColor}" options:Freeze="True" />
+
+    <LinearGradientBrush x:Key="GradientBackgroundBrush" 
+                         StartPoint="0.5,0" EndPoint="0.5,1" MappingMode="RelativeToBoundingBox"
+                         options:Freeze="True">
+        <GradientStop Color="White" Offset="0"/>
+        <GradientStop Color="#FFF2F2F2" Offset="1"/>
+    </LinearGradientBrush>
+    
+    <!-- WIDGET & GADGET BRUSHES-->   
+    <SolidColorBrush x:Key="GadgetBackgroundBrush" Color="Snow" options:Freeze="True" />
+    
+    <!-- SHORTCUT BRUSHES -->
+    <SolidColorBrush x:Key="ShortcutTextBrush" Color="#FF333333" options:Freeze="True" />    
+    
+    <!-- WINDOW BRUSHES -->
+    <SolidColorBrush x:Key="WindowBorderBrush" Color="{StaticResource Gray1}" options:Freeze="True" />
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WhiteColor}" options:Freeze="True" />
+               
+    <!-- Brushes Stop -->
+
+    <!-- Brushes End -->
+
+</ResourceDictionary>

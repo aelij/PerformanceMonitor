@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="PerformanceMonitor.Views.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModels="clr-namespace:PerformanceMonitor.ViewModels"
+             xmlns:views="clr-namespace:PerformanceMonitor.Views"
+             xmlns:av="http://schemas.codeplex.com/wpfcontrib/xaml/presentation"
+             xmlns:xcad="http://schemas.xceed.com/wpf/xaml/avalondock"
+             mc:Ignorable="d"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             d:DataContext="{d:DesignInstance viewModels:MainViewModel}">
+    <av:InlineModalDecorator Target="{Binding RelativeSource={RelativeSource AncestorType=Window}}">
+        <DockPanel Name="LayoutRoot">
+            <views:SearchCategoryView DockPanel.Dock="Top"
+                                      DataContext="{Binding Categories}" />
+            <xcad:DockingManager>
+                <xcad:LayoutRoot>
+                    <xcad:LayoutPanel Orientation="Vertical">
+                        <xcad:LayoutDocumentPane>
+                            <xcad:LayoutAnchorable Title="Chart"
+                                                   CanClose="False">
+                                <views:ChartView DataContext="{Binding Counters}" />
+                            </xcad:LayoutAnchorable>
+                        </xcad:LayoutDocumentPane>
+                        <xcad:LayoutAnchorablePane DockHeight="300">
+                            <xcad:LayoutAnchorable Title="Counters"
+                                                   CanClose="False">
+                                <views:CountersView DataContext="{Binding Counters}" />
+                            </xcad:LayoutAnchorable>
+                        </xcad:LayoutAnchorablePane>
+                    </xcad:LayoutPanel>
+                </xcad:LayoutRoot>
+            </xcad:DockingManager>
+        </DockPanel>
+    </av:InlineModalDecorator>
+</UserControl>
