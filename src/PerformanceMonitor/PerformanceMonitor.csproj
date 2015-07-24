@@ -40,6 +40,7 @@
   <ItemGroup>
     <Reference Include="AvalonLibrary">
       <HintPath>..\packages\AvalonLibrary.2.0.0.0\lib\net40\AvalonLibrary.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -55,7 +56,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="Xceed.Wpf.AvalonDock, Version=2.7.15330.12150, Culture=neutral, PublicKeyToken=ba83ff368b7563c6, processorArchitecture=MSIL">
       <HintPath>..\packages\Xceed.Wpf.AvalonDock.2.7.15330.12150\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -246,6 +247,14 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="App.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\packages\AvalonLibrary.2.0.0.0\lib\net40\AvalonLibrary.dll">
+      <Link>Assemblies\AvalonLibrary.dll</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\packages\Xceed.Wpf.AvalonDock.2.7.15330.12150\lib\net40\Xceed.Wpf.AvalonDock.dll">
+      <Link>Assemblies\Xceed.Wpf.AvalonDock.dll</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

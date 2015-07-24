@@ -43,7 +43,7 @@ namespace PerformanceMonitor.ViewModels
 
                 // ReSharper restore AssignNullToNotNullAttribute
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }
